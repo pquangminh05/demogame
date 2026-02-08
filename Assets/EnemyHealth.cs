@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Awake()
     {
-        // Khởi tạo máu 1 lần duy nhất
+        
         currentHealth = maxHealth;
     }
 
@@ -20,7 +20,6 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth -= damage;
 
-        // Tạo hiệu ứng nổ / hit
         if (hitEffectPrefab != null)
         {
             Instantiate(
